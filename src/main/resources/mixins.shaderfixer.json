@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "minVersion": "0.8.5-GTNH",
+  "package": "net.irisshaders.shaderfixer.mixins",
+  "refmap": "mixins.shaderfixer.refmap.json",
+  "target": "@env(DEFAULT)",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "ShadersMixin",
+    "ShaderParserMixin"
+  ],
+  "client": [],
+  "server": []
+}

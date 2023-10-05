@@ -198,6 +198,7 @@ tasks.withType(ScalaCompile).configureEach {
     options.encoding = "UTF-8"
 }
 
+
 pluginManager.withPlugin('org.jetbrains.kotlin.jvm') {
     // If Kotlin is enabled in the project
     kotlin {
@@ -467,6 +468,7 @@ minecraft {
 
     // Enable assertions in the current mod
     extraRunJvmArguments.add("-ea:${modGroup}")
+    extraRunJvmArguments.add("-Dofdev.mcjar=/Users/ims/.gradle/caches/retro_futura_gradle/mc-vanilla/1.7.10/client.jar")
 
     if (usesMixins.toBoolean() || forceEnableMixins.toBoolean()) {
         if (usesMixinDebug.toBoolean()) {
